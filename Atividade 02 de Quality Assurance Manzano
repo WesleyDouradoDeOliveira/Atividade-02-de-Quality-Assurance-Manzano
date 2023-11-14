@@ -1,42 +1,3 @@
-package TesteDeSoftwareQA;
-
-import java.util.Scanner;
-
-public class Atividade {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String resposta;
-        
-        do {
-            // Passo 3: Ler um valor para a variável x
-            System.out.print("Digite um valor para x: ");
-            int x = scanner.nextInt();
-
-            // Passo 4: Efetuar a multiplicação do valor de x por 3 e armazenar o resultado em R
-            int R = x * 3;
-
-            // Passo 5: Apresentar o valor calculado contido na variável R
-            System.out.println("O resultado da multiplicação de " + x + " por 3 é: " + R);
-
-            // Perguntar se deseja repetir o processo
-            System.out.print("Deseja realizar outra operação? (sim/não): ");
-            resposta = scanner.next().toLowerCase();
-
-        } while (resposta.equals("sim"));
-
-        // Encerrar o programa
-        System.out.println("Programa encerrado.");
-
-        // Fechar o scanner
-        scanner.close();
-    }
-}
-
-
-
-
 package Exercicios;
 public class Exercicio01EstruturaFormaanzano01 {
 public static void main(String[] args) {
@@ -155,5 +116,44 @@ public class PrimeiroExemploAWT extends Frame{
 		PrimeiroExemploAWT pea = new PrimeiroExemploAWT();
 	}
 }
+
+package Exercicios;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String resposta;
+        
+        do {
+            // Passo 3: Ler um valor para a variável x
+            System.out.print("Digite um valor para x: ");
+            int x = scanner.nextInt();
+
+            // Passo 4: Efetuar a multiplicação do valor de x por 3 e armazenar o resultado em R
+            int R = x * 3;
+
+            // Passo 5: Apresentar o valor calculado contido na variável R
+            System.out.println("O resultado da multiplicação de " + x + " por 3 é: " + R);
+
+            // Perguntar se deseja repetir o processo
+            System.out.print("Deseja realizar outra operação? (sim/não): ");
+            resposta = scanner.next().toLowerCase();
+
+        } while (resposta.equals("sim"));
+
+        // Encerrar o programa
+        System.out.println("Programa encerrado.");
+
+        // Fechar o scanner
+        scanner.close();
+    }
+}
+
+
+
 
 
